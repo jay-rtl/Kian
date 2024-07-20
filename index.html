@@ -143,6 +143,21 @@
         background-color: #fff; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
+    .resume-btn
+{
+    background: rgba(0, 0, 0, 0); /* Fully transparent background */
+    border: 2px solid #28a745; /* Green border */
+    color: #28a745; /* Green text */
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
     
   </style>
   <title>My Portfolio</title>
@@ -175,7 +190,7 @@
         <a onclick="toggleSection('education')">Education</a>
         <a onclick="toggleSection('experience')">Experience</a>
         <a onclick="toggleSection('interests')">Interests</a>
-        <a onclick="toggleSection('resume')" href="https://github.com/jay-rtl/kian/raw/main/kian.pdf">Resume</a>
+        <a onclick="toggleSection('resume')">Resume</a>
         <a onclick="toggleSection('skills')">Skills</a>
         <a onclick="toggleSection('das')">DAS</a>
       </div>
@@ -262,6 +277,7 @@
         <div class="resume-container">
             <img alt="Resume" class="resume"
                 src="kian.jpeg">
+          <a  href="https://github.com/jay-rtl/kian/blob/main/kian.pdf" class="resume-btn">download</a>
                 
         </div>
       </section>
